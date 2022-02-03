@@ -6,11 +6,19 @@ describe('Netinkamo tipo parametras', () => {
     });
 })
 
-describe('Tinkamo tipo parametras, bet su blogomis reiksmemis', () => {
+describe('Tinkamo tipo parametras, bet su per trumpa reiksme', () => {
     test('Li - per trumpas', () => {
         expect(isValidUsername('Li')).toBe('Per trumpas');
     });
 })
+
+describe('Tinkamo tipo parametras, bet su per ilga reiksme', () => {
+    test('Li - per ilgas', () => {
+        expect(isValidUsername('Lilililililililililili')).toBe('Per ilgas');
+    });
+})
+
+
 
 describe('Tinkamo tipo parametras', () => {
     test('John', () => {
